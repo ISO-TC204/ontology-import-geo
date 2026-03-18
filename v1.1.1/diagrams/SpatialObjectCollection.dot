@@ -1,0 +1,16 @@
+// Diagram for SpatialObjectCollection
+digraph {
+	graph [overlap=false rankdir=TB splines=true]
+	node [fontname=Arial fontsize=12 margin=0 shape=none]
+	edge [fontname=Arial fontsize=11]
+	SpatialObjectCollection [label=<<TABLE BORDER="1" CELLBORDER="0" CELLSPACING="0" CELLPADDING="1"><TR><TD BGCOLOR="lightgray" ALIGN="CENTER">SpatialObjectCollection</TD></TR></TABLE>> URL="../SpatialObjectCollection" margin=0]
+	{
+		rank=max
+	}
+	subgraph cluster_associated {
+		label="" style=invis
+		Invis [label=<<TABLE BORDER="0" CELLBORDER="0" CELLSPACING="0" CELLPADDING="1"><TR><TD></TD></TR></TABLE>> margin=0 style=invis]
+	}
+	rdfs_Container [label=<<TABLE BORDER="1" CELLBORDER="0" CELLSPACING="0" CELLPADDING="1"><TR><TD BGCOLOR="lightgray" ALIGN="CENTER">rdfs:Container</TD></TR></TABLE>> URL="https://w3id.org/citydata/imported/rdfs/latest/Container" margin=0]
+	SpatialObjectCollection -> rdfs_Container [arrowhead=onormal style=solid]
+}
