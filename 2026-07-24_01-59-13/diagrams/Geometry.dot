@@ -1,0 +1,19 @@
+// Diagram for Geometry
+digraph {
+	graph [overlap=false rankdir=TB splines=true]
+	node [fontname=Arial fontsize=12 margin=0 shape=none]
+	edge [fontname=Arial fontsize=11]
+	{
+		rank=source
+		SpatialObject [label=<<TABLE BORDER="1" CELLBORDER="0" CELLSPACING="0" CELLPADDING="1"><TR><TD BGCOLOR="lightgray" ALIGN="CENTER">SpatialObject</TD></TR></TABLE>> URL="../SpatialObject" margin=0]
+	}
+	Geometry [label=<<TABLE BORDER="1" CELLBORDER="0" CELLSPACING="0" CELLPADDING="1"><TR><TD BGCOLOR="lightgray" ALIGN="CENTER">Geometry</TD></TR><TR><TD ALIGN="LEFT">asDGGS : dggsLiteral</TD></TR><TR><TD ALIGN="LEFT">asGeoJSON : geoJSONLiteral</TD></TR><TR><TD ALIGN="LEFT">asGML : gmlLiteral</TD></TR><TR><TD ALIGN="LEFT">asKML : kmlLiteral</TD></TR><TR><TD ALIGN="LEFT">asWKT : wktLiteral</TD></TR><TR><TD ALIGN="LEFT">coordinateDimension : xsd:integer</TD></TR><TR><TD ALIGN="LEFT">dimension : xsd:integer</TD></TR><TR><TD ALIGN="LEFT">hasMetricSpatialAccuracy : xsd:double</TD></TR><TR><TD ALIGN="LEFT">hasMetricSpatialResolution : xsd:double</TD></TR><TR><TD ALIGN="LEFT">isEmpty : xsd:boolean</TD></TR><TR><TD ALIGN="LEFT">isSimple : xsd:boolean</TD></TR><TR><TD ALIGN="LEFT">spatialDimension : xsd:integer</TD></TR></TABLE>> URL="../Geometry" margin=0]
+	{
+		rank=max
+	}
+	subgraph cluster_associated {
+		label="" style=invis
+		Invis [label=<<TABLE BORDER="0" CELLBORDER="0" CELLSPACING="0" CELLPADDING="1"><TR><TD></TD></TR></TABLE>> margin=0 style=invis]
+	}
+	Geometry -> SpatialObject [arrowhead=onormal style=solid]
+}

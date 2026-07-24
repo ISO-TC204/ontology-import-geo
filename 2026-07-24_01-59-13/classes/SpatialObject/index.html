@@ -1,0 +1,3239 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="The GeoSPARQL ontology converted into a website">
+      
+      
+      
+        <link rel="canonical" href="https://isotc204.org/ontology-import-geo/2026-07-24_01-59-13/classes/SpatialObject/">
+      
+      
+        <link rel="prev" href="../GeometryCollection/">
+      
+      
+        <link rel="next" href="../SpatialObjectCollection/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.7">
+    
+    
+      
+        <title>Spatial Object - The GeoSPARQL Ontology</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.ec1eaa64.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+  
+  
+    
+      
+      
+    
+  
+  
+  <style>:root{--md-admonition-icon--question:url('data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%20576%20512%22%3E%3C%21--%21%20Font%20Awesome%20Free%207.1.0%20by%20%40fontawesome%20-%20https%3A//fontawesome.com%20License%20-%20https%3A//fontawesome.com/license/free%20%28Icons%3A%20CC%20BY%204.0%2C%20Fonts%3A%20SIL%20OFL%201.1%2C%20Code%3A%20MIT%20License%29%20Copyright%202025%20Fonticons%2C%20Inc.--%3E%3Cpath%20d%3D%22M384%20144c0%2097.2-86%20176-192%20176-26.7%200-52.1-5-75.2-14l-81.6%2043.2c-9.3%204.9-20.7%203.2-28.2-4.2s-9.2-18.9-4.2-28.2l35.6-67.2C14.3%20220.2%200%20183.6%200%20144%200%2046.8%2086-32%20192-32s192%2078.8%20192%20176m0%20368c-94.1%200-172.4-62.1-188.8-144%20120-1.5%20224.3-86.9%20235.8-202.7%2083.3%2019.2%20145%2088.3%20145%20170.7%200%2039.6-14.3%2076.2-38.4%20105.6l35.6%2067.2c4.9%209.3%203.2%2020.7-4.2%2028.2s-18.9%209.2-28.2%204.2L459.2%20498c-23.1%209-48.5%2014-75.2%2014%22/%3E%3C/svg%3E');}</style>
+
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#spatialobject" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+      <div data-md-color-scheme="default" data-md-component="outdated" hidden>
+        
+      </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="The GeoSPARQL Ontology" class="md-header__button md-logo" aria-label="The GeoSPARQL Ontology" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            The GeoSPARQL Ontology
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Spatial Object
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/ISO-TC204/ontology-import-geo" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M173.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M252.8 8C114.1 8 8 113.3 8 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C436.2 457.8 504 362.9 504 252 504 113.3 391.5 8 252.8 8M105.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+    
+      
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="https://www.iso.org/committee/54706.html" class="md-tabs__link">
+        
+  
+  
+    
+  
+  TC204 on ISO.org
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="https://isotc204.org/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  TC 204 Home
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="https://isotc204.org/ritso/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  RITSO Home
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../.." class="md-tabs__link">
+          
+  
+  
+  The GeoSPARQL Ontology
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+    
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="The GeoSPARQL Ontology" class="md-nav__button md-logo" aria-label="The GeoSPARQL Ontology" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    The GeoSPARQL Ontology
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/ISO-TC204/ontology-import-geo" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M173.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M252.8 8C114.1 8 8 113.3 8 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C436.2 457.8 504 362.9 504 252 504 113.3 391.5 8 252.8 8M105.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://www.iso.org/committee/54706.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    TC204 on ISO.org
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://isotc204.org/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    TC 204 Home
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://isotc204.org/ritso/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    RITSO Home
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    The GeoSPARQL Ontology
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    The GeoSPARQL Ontology
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Home
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_2" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_4_2" id="__nav_4_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Classes
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_4_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Classes
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Feature/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Feature
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../FeatureCollection/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Feature Collection
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Geometry/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Geometry
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../GeometryCollection/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Geometry Collection
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Spatial Object
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Spatial Object
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#diagram" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Diagram
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#specializations-of-spatialobject" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Specializations of SpatialObject
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#formalization-for-spatialobject" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Formalization for SpatialObject
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#used-by-classes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Used by classes
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../SpatialObjectCollection/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Spatial Object Collection
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_4_3" id="__nav_4_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Properties
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Properties
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../properties/asDGGS/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    asDGGS
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../properties/asGeoJSON/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    asGeoJSON
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../properties/asGML/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    asGML
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../properties/asKML/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    asKML
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../properties/asWKT/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    asWKT
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../properties/coordinateDimension/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    coordinateDimension
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../properties/defaultGeometry/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    defaultGeometry
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../properties/dimension/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    dimension
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../properties/ehContains/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    ehContains
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../properties/ehCoveredBy/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    ehCoveredBy
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../properties/ehCovers/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    ehCovers
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../properties/ehDisjoint/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    ehDisjoint
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../properties/ehEquals/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    ehEquals
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../properties/ehInside/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    ehInside
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../properties/ehMeet/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    ehMeet
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../properties/ehOverlap/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    ehOverlap
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../properties/hasArea/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    hasArea
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../properties/hasBoundingBox/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    hasBoundingBox
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../properties/hasCentroid/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    hasCentroid
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../properties/hasDefaultGeometry/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    hasDefaultGeometry
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../properties/hasGeometry/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    hasGeometry
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../properties/hasLength/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    hasLength
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../properties/hasMetricArea/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    hasMetricArea
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../properties/hasMetricLength/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    hasMetricLength
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../properties/hasMetricPerimeterLength/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    hasMetricPerimeterLength
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../properties/hasMetricSize/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    hasMetricSize
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../properties/hasMetricSpatialAccuracy/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    hasMetricSpatialAccuracy
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../properties/hasMetricSpatialResolution/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    hasMetricSpatialResolution
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../properties/hasMetricVolume/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    hasMetricVolume
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../properties/hasPerimeterLength/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    hasPerimeterLength
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../properties/hasSerialization/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    hasSerialization
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../properties/hasSize/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    hasSize
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../properties/hasSpatialAccuracy/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    hasSpatialAccuracy
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../properties/hasSpatialResolution/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    hasSpatialResolution
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../properties/hasVolume/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    hasVolume
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../properties/isEmpty/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    isEmpty
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../properties/isSimple/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    isSimple
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../properties/rcc8dc/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    rcc8dc
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../properties/rcc8ec/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    rcc8ec
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../properties/rcc8eq/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    rcc8eq
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../properties/rcc8ntpp/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    rcc8ntpp
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../properties/rcc8ntppi/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    rcc8ntppi
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../properties/rcc8po/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    rcc8po
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../properties/rcc8tpp/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    rcc8tpp
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../properties/rcc8tppi/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    rcc8tppi
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../properties/sfContains/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    sfContains
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../properties/sfCrosses/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    sfCrosses
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../properties/sfDisjoint/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    sfDisjoint
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../properties/sfEquals/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    sfEquals
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../properties/sfIntersects/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    sfIntersects
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../properties/sfOverlaps/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    sfOverlaps
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../properties/sfTouches/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    sfTouches
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../properties/sfWithin/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    sfWithin
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../properties/spatialDimension/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    spatialDimension
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4_4" id="__nav_4_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Datatypes
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Datatypes
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../datatypes/dggsLiteral/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    dggsLiteral
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../datatypes/geoJSONLiteral/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    geoJSONLiteral
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../datatypes/gmlLiteral/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    gmlLiteral
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../datatypes/kmlLiteral/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    kmlLiteral
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../datatypes/wktLiteral/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    wktLiteral
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#diagram" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Diagram
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#specializations-of-spatialobject" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Specializations of SpatialObject
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#formalization-for-spatialobject" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Formalization for SpatialObject
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#used-by-classes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Used by classes
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+                
+
+
+
+
+  <nav class="md-path" aria-label="Navigation" >
+    <ol class="md-path__list">
+      
+      
+        
+  
+  
+    
+    
+      <li class="md-path__item">
+        <a href="../.." class="md-path__link">
+          
+  <span class="md-ellipsis">
+    The GeoSPARQL Ontology
+  </span>
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+    
+    
+      <li class="md-path__item">
+        <a href="../Feature/" class="md-path__link">
+          
+  <span class="md-ellipsis">
+    Classes
+  </span>
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ol>
+  </nav>
+
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  
+  
+
+
+<h1 id="spatialobject">SpatialObject<a class="headerlink" href="#spatialobject" title="Permanent link">&para;</a></h1>
+<p>Anything spatial (being or having a shape, position or an extent).</p>
+<p>NOTE: Subclasses of this class are expected to be used for instance data.</p>
+<h2 id="diagram">Diagram<a class="headerlink" href="#diagram" title="Permanent link">&para;</a></h2>
+<div class="tabbed-set tabbed-alternate" data-tabs="1:2"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">SVG (interactive)</label><label for="__tabbed_1_2">PNG</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<p><!-- Generated by graphviz version 14.1.3 (20260303.0454)
+ -->
+<!-- Pages: 1 -->
+<svg width="1842pt" height="80pt"
+ viewBox="0.00 0.00 1842.00 80.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 76.42)">
+<polygon fill="white" stroke="none" points="-4,4 -4,-76.42 1838,-76.42 1838,4 -4,4"/>
+<g id="clust3" class="cluster">
+<title>cluster_associated</title>
+</g>
+<!-- SpatialObject -->
+<g id="node1" class="node">
+<title>SpatialObject</title>
+<g id="a_node1"><a xlink:href="../SpatialObject" xlink:title="&lt;TABLE&gt;">
+<polygon fill="lightgray" stroke="none" points="1,-28.09 1,-44.34 75,-44.34 75,-28.09 1,-28.09"/>
+<text xml:space="preserve" text-anchor="start" x="2" y="-32.09" font-family="Arial" font-size="12.00">SpatialObject</text>
+<polygon fill="none" stroke="black" points="0,-27.09 0,-45.34 76,-45.34 76,-27.09 0,-27.09"/>
+</a>
+</g>
+</g>
+<!-- SpatialObject&#45;&gt;SpatialObject -->
+<g id="edge1" class="edge">
+<title>SpatialObject&#45;&gt;SpatialObject</title>
+<path fill="none" stroke="black" d="M75.95,-37.7C86.2,-37.62 94,-37.13 94,-36.21 94,-35.69 91.39,-35.3 87.21,-35.05"/>
+<polygon fill="black" stroke="black" points="87.56,-31.56 77.46,-34.77 87.36,-38.55 87.56,-31.56"/>
+<polygon fill="white" stroke="none" points="94,-25.46 94,-46.96 156.75,-46.96 156.75,-25.46 94,-25.46"/>
+<text xml:space="preserve" text-anchor="start" x="98" y="-32.46" font-family="Arial" font-size="11.00">ehContains</text>
+</g>
+<!-- SpatialObject&#45;&gt;SpatialObject -->
+<g id="edge2" class="edge">
+<title>SpatialObject&#45;&gt;SpatialObject</title>
+<path fill="none" stroke="black" d="M75.86,-38.77C111.77,-39.83 156.75,-38.98 156.75,-36.21 156.75,-33.73 120.45,-32.79 87.03,-33.39"/>
+<polygon fill="black" stroke="black" points="87.29,-29.88 77.38,-33.62 87.46,-36.88 87.29,-29.88"/>
+<polygon fill="white" stroke="none" points="156.75,-25.46 156.75,-46.96 230.75,-46.96 230.75,-25.46 156.75,-25.46"/>
+<text xml:space="preserve" text-anchor="start" x="160.75" y="-32.46" font-family="Arial" font-size="11.00">ehCoveredBy</text>
+</g>
+<!-- SpatialObject&#45;&gt;SpatialObject -->
+<g id="edge3" class="edge">
+<title>SpatialObject&#45;&gt;SpatialObject</title>
+<path fill="none" stroke="black" d="M75.67,-39.37C133.79,-41.91 230.75,-40.85 230.75,-36.21 230.75,-31.86 145.53,-30.67 86.99,-32.63"/>
+<polygon fill="black" stroke="black" points="87.04,-29.12 77.18,-33 87.31,-36.12 87.04,-29.12"/>
+<polygon fill="white" stroke="none" points="230.75,-25.46 230.75,-46.96 285.25,-46.96 285.25,-25.46 230.75,-25.46"/>
+<text xml:space="preserve" text-anchor="start" x="234.75" y="-32.46" font-family="Arial" font-size="11.00">ehCovers</text>
+</g>
+<!-- SpatialObject&#45;&gt;SpatialObject -->
+<g id="edge4" class="edge">
+<title>SpatialObject&#45;&gt;SpatialObject</title>
+<path fill="none" stroke="black" d="M76,-39.96C148.23,-43.91 285.25,-42.67 285.25,-36.21 285.25,-30.09 161.79,-28.65 87.48,-31.91"/>
+<polygon fill="black" stroke="black" points="87.33,-28.41 77.51,-32.4 87.67,-35.4 87.33,-28.41"/>
+<polygon fill="white" stroke="none" points="285.25,-25.46 285.25,-46.96 340.5,-46.96 340.5,-25.46 285.25,-25.46"/>
+<text xml:space="preserve" text-anchor="start" x="289.25" y="-32.46" font-family="Arial" font-size="11.00">ehDisjoint</text>
+</g>
+<!-- SpatialObject&#45;&gt;SpatialObject -->
+<g id="edge5" class="edge">
+<title>SpatialObject&#45;&gt;SpatialObject</title>
+<path fill="none" stroke="black" d="M75.92,-40.43C161.05,-45.93 340.5,-44.52 340.5,-36.21 340.5,-28.26 176.14,-26.63 87.39,-31.33"/>
+<polygon fill="black" stroke="black" points="87.21,-27.84 77.43,-31.91 87.62,-34.82 87.21,-27.84"/>
+<polygon fill="white" stroke="none" points="340.5,-25.46 340.5,-46.96 393.5,-46.96 393.5,-25.46 340.5,-25.46"/>
+<text xml:space="preserve" text-anchor="start" x="344.5" y="-32.46" font-family="Arial" font-size="11.00">ehEquals</text>
+</g>
+<!-- SpatialObject&#45;&gt;SpatialObject -->
+<g id="edge6" class="edge">
+<title>SpatialObject&#45;&gt;SpatialObject</title>
+<path fill="none" stroke="black" d="M75.89,-40.84C172.53,-47.94 393.5,-46.4 393.5,-36.21 393.5,-26.41 188.62,-24.62 87.14,-30.83"/>
+<polygon fill="black" stroke="black" points="87.14,-27.33 77.4,-31.49 87.61,-34.31 87.14,-27.33"/>
+<polygon fill="white" stroke="none" points="393.5,-25.46 393.5,-46.96 442,-46.96 442,-25.46 393.5,-25.46"/>
+<text xml:space="preserve" text-anchor="start" x="397.5" y="-32.46" font-family="Arial" font-size="11.00">ehInside</text>
+</g>
+<!-- SpatialObject&#45;&gt;SpatialObject -->
+<g id="edge7" class="edge">
+<title>SpatialObject&#45;&gt;SpatialObject</title>
+<path fill="none" stroke="black" d="M75.66,-41.2C182.25,-49.95 442,-48.29 442,-36.21 442,-24.55 199.7,-22.61 87.11,-30.37"/>
+<polygon fill="black" stroke="black" points="86.88,-26.87 77.17,-31.11 87.4,-33.85 86.88,-26.87"/>
+<polygon fill="white" stroke="none" points="442,-25.46 442,-46.96 486,-46.96 486,-25.46 442,-25.46"/>
+<text xml:space="preserve" text-anchor="start" x="446" y="-32.46" font-family="Arial" font-size="11.00">ehMeet</text>
+</g>
+<!-- SpatialObject&#45;&gt;SpatialObject -->
+<g id="edge8" class="edge">
+<title>SpatialObject&#45;&gt;SpatialObject</title>
+<path fill="none" stroke="black" d="M75.83,-41.57C191.43,-51.95 486,-50.17 486,-36.21 486,-22.7 209.55,-20.6 87.17,-29.92"/>
+<polygon fill="black" stroke="black" points="87.01,-26.42 77.34,-30.73 87.59,-33.4 87.01,-26.42"/>
+<polygon fill="white" stroke="none" points="486,-25.46 486,-46.96 543.5,-46.96 543.5,-25.46 486,-25.46"/>
+<text xml:space="preserve" text-anchor="start" x="490" y="-32.46" font-family="Arial" font-size="11.00">ehOverlap</text>
+</g>
+<!-- SpatialObject&#45;&gt;SpatialObject -->
+<g id="edge9" class="edge">
+<title>SpatialObject&#45;&gt;SpatialObject</title>
+<path fill="none" stroke="black" d="M75.88,-41.84C202.25,-53.96 543.5,-52.09 543.5,-36.21 543.5,-20.79 221.3,-18.58 87.12,-29.59"/>
+<polygon fill="black" stroke="black" points="87.04,-26.08 77.39,-30.45 87.66,-33.06 87.04,-26.08"/>
+<polygon fill="white" stroke="none" points="543.5,-25.46 543.5,-46.96 583,-46.96 583,-25.46 543.5,-25.46"/>
+<text xml:space="preserve" text-anchor="start" x="547.5" y="-32.46" font-family="Arial" font-size="11.00">rcc8dc</text>
+</g>
+<!-- SpatialObject&#45;&gt;SpatialObject -->
+<g id="edge10" class="edge">
+<title>SpatialObject&#45;&gt;SpatialObject</title>
+<path fill="none" stroke="black" d="M75.93,-42.15C209.98,-55.97 583,-53.99 583,-36.21 583,-18.91 229.39,-16.58 87.02,-29.22"/>
+<polygon fill="black" stroke="black" points="87.06,-25.7 77.43,-30.13 87.72,-32.67 87.06,-25.7"/>
+<polygon fill="white" stroke="none" points="583,-25.46 583,-46.96 622.5,-46.96 622.5,-25.46 583,-25.46"/>
+<text xml:space="preserve" text-anchor="start" x="587" y="-32.46" font-family="Arial" font-size="11.00">rcc8ec</text>
+</g>
+<!-- SpatialObject&#45;&gt;SpatialObject -->
+<g id="edge11" class="edge">
+<title>SpatialObject&#45;&gt;SpatialObject</title>
+<path fill="none" stroke="black" d="M75.59,-42.39C216.85,-57.97 622.5,-55.92 622.5,-36.21 622.5,-17.01 237.19,-14.57 86.85,-28.89"/>
+<polygon fill="black" stroke="black" points="86.69,-25.38 77.09,-29.88 87.4,-32.35 86.69,-25.38"/>
+<polygon fill="white" stroke="none" points="622.5,-25.46 622.5,-46.96 662.75,-46.96 662.75,-25.46 622.5,-25.46"/>
+<text xml:space="preserve" text-anchor="start" x="626.5" y="-32.46" font-family="Arial" font-size="11.00">rcc8eq</text>
+</g>
+<!-- SpatialObject&#45;&gt;SpatialObject -->
+<g id="edge12" class="edge">
+<title>SpatialObject&#45;&gt;SpatialObject</title>
+<path fill="none" stroke="black" d="M75.87,-42.67C224.9,-59.98 662.75,-57.82 662.75,-36.21 662.75,-15.13 246.02,-12.57 87.29,-28.52"/>
+<polygon fill="black" stroke="black" points="86.94,-25.04 77.38,-29.59 87.7,-32 86.94,-25.04"/>
+<polygon fill="white" stroke="none" points="662.75,-25.46 662.75,-46.96 712,-46.96 712,-25.46 662.75,-25.46"/>
+<text xml:space="preserve" text-anchor="start" x="666.75" y="-32.46" font-family="Arial" font-size="11.00">rcc8ntpp</text>
+</g>
+<!-- SpatialObject&#45;&gt;SpatialObject -->
+<g id="edge13" class="edge">
+<title>SpatialObject&#45;&gt;SpatialObject</title>
+<path fill="none" stroke="black" d="M75.86,-42.87C233.43,-61.98 712,-59.76 712,-36.21 712,-13.2 255.14,-10.56 87.2,-28.27"/>
+<polygon fill="black" stroke="black" points="86.91,-24.79 77.36,-29.39 87.69,-31.74 86.91,-24.79"/>
+<polygon fill="white" stroke="none" points="712,-25.46 712,-46.96 763.5,-46.96 763.5,-25.46 712,-25.46"/>
+<text xml:space="preserve" text-anchor="start" x="716" y="-32.46" font-family="Arial" font-size="11.00">rcc8ntppi</text>
+</g>
+<!-- SpatialObject&#45;&gt;SpatialObject -->
+<g id="edge14" class="edge">
+<title>SpatialObject&#45;&gt;SpatialObject</title>
+<path fill="none" stroke="black" d="M75.83,-43.05C242.03,-63.99 763.5,-61.71 763.5,-36.21 763.5,-11.26 264.19,-8.55 87.03,-28.06"/>
+<polygon fill="black" stroke="black" points="86.86,-24.56 77.34,-29.2 87.68,-31.51 86.86,-24.56"/>
+<polygon fill="white" stroke="none" points="763.5,-25.46 763.5,-46.96 803.75,-46.96 803.75,-25.46 763.5,-25.46"/>
+<text xml:space="preserve" text-anchor="start" x="767.5" y="-32.46" font-family="Arial" font-size="11.00">rcc8po</text>
+</g>
+<!-- SpatialObject&#45;&gt;SpatialObject -->
+<g id="edge15" class="edge">
+<title>SpatialObject&#45;&gt;SpatialObject</title>
+<path fill="none" stroke="black" d="M75.83,-43.25C249.15,-65.99 803.75,-63.65 803.75,-36.21 803.75,-9.35 272.19,-6.54 87.24,-27.78"/>
+<polygon fill="black" stroke="black" points="86.83,-24.31 77.33,-29 87.68,-31.25 86.83,-24.31"/>
+<polygon fill="white" stroke="none" points="803.75,-25.46 803.75,-46.96 847,-46.96 847,-25.46 803.75,-25.46"/>
+<text xml:space="preserve" text-anchor="start" x="807.75" y="-32.46" font-family="Arial" font-size="11.00">rcc8tpp</text>
+</g>
+<!-- SpatialObject&#45;&gt;SpatialObject -->
+<g id="edge16" class="edge">
+<title>SpatialObject&#45;&gt;SpatialObject</title>
+<path fill="none" stroke="black" d="M75.97,-43.44C256.85,-68 847,-65.59 847,-36.21 847,-7.43 280.24,-4.54 87.32,-27.54"/>
+<polygon fill="black" stroke="black" points="86.95,-24.06 77.47,-28.79 87.84,-31.01 86.95,-24.06"/>
+<polygon fill="white" stroke="none" points="847,-25.46 847,-46.96 892.5,-46.96 892.5,-25.46 847,-25.46"/>
+<text xml:space="preserve" text-anchor="start" x="851" y="-32.46" font-family="Arial" font-size="11.00">rcc8tppi</text>
+</g>
+<!-- SpatialObject&#45;&gt;SpatialObject -->
+<g id="edge17" class="edge">
+<title>SpatialObject&#45;&gt;SpatialObject</title>
+<path fill="none" stroke="black" d="M75.97,-43.6C264.42,-70 892.5,-67.54 892.5,-36.21 892.5,-5.48 288.11,-2.53 87.21,-27.35"/>
+<polygon fill="black" stroke="black" points="86.93,-23.86 77.47,-28.63 87.84,-30.8 86.93,-23.86"/>
+<polygon fill="white" stroke="none" points="892.5,-25.46 892.5,-46.96 951.5,-46.96 951.5,-25.46 892.5,-25.46"/>
+<text xml:space="preserve" text-anchor="start" x="896.5" y="-32.46" font-family="Arial" font-size="11.00">sfContains</text>
+</g>
+<!-- SpatialObject&#45;&gt;SpatialObject -->
+<g id="edge18" class="edge">
+<title>SpatialObject&#45;&gt;SpatialObject</title>
+<path fill="none" stroke="black" d="M76,-43.72C273.42,-72.01 951.5,-69.51 951.5,-36.21 951.5,-3.52 297.7,-0.52 87.16,-27.2"/>
+<polygon fill="black" stroke="black" points="86.94,-23.7 77.5,-28.5 87.88,-30.64 86.94,-23.7"/>
+<polygon fill="white" stroke="none" points="951.5,-25.46 951.5,-46.96 1007.5,-46.96 1007.5,-25.46 951.5,-25.46"/>
+<text xml:space="preserve" text-anchor="start" x="955.5" y="-32.46" font-family="Arial" font-size="11.00">sfCrosses</text>
+</g>
+<!-- SpatialObject&#45;&gt;SpatialObject -->
+<g id="edge19" class="edge">
+<title>SpatialObject&#45;&gt;SpatialObject</title>
+<path fill="none" stroke="black" d="M75.77,-43.81C281.32,-74.02 1007.5,-71.49 1007.5,-36.21 1007.5,-1.56 306.62,1.49 87.08,-27.06"/>
+<polygon fill="black" stroke="black" points="86.69,-23.58 77.27,-28.41 87.65,-30.51 86.69,-23.58"/>
+<polygon fill="white" stroke="none" points="1007.5,-25.46 1007.5,-46.96 1059,-46.96 1059,-25.46 1007.5,-25.46"/>
+<text xml:space="preserve" text-anchor="start" x="1011.5" y="-32.46" font-family="Arial" font-size="11.00">sfDisjoint</text>
+</g>
+<!-- SpatialObject&#45;&gt;SpatialObject -->
+<g id="edge20" class="edge">
+<title>SpatialObject&#45;&gt;SpatialObject</title>
+<path fill="none" stroke="black" d="M75.95,-43.96C289.58,-76.02 1059,-73.44 1059,-36.21 1059,0.39 314.92,3.5 87.04,-26.9"/>
+<polygon fill="black" stroke="black" points="86.86,-23.39 77.44,-28.26 87.84,-30.32 86.86,-23.39"/>
+<polygon fill="white" stroke="none" points="1059,-25.46 1059,-46.96 1108.25,-46.96 1108.25,-25.46 1059,-25.46"/>
+<text xml:space="preserve" text-anchor="start" x="1063" y="-32.46" font-family="Arial" font-size="11.00">sfEquals</text>
+</g>
+<!-- SpatialObject&#45;&gt;SpatialObject -->
+<g id="edge21" class="edge">
+<title>SpatialObject&#45;&gt;SpatialObject</title>
+<path fill="none" stroke="black" d="M75.96,-44.08C297.13,-78.03 1108.25,-75.4 1108.25,-36.21 1108.25,2.34 323.06,5.5 87.1,-26.74"/>
+<polygon fill="black" stroke="black" points="86.85,-23.24 77.45,-28.13 87.85,-30.16 86.85,-23.24"/>
+<polygon fill="white" stroke="none" points="1108.25,-25.46 1108.25,-46.96 1171,-46.96 1171,-25.46 1108.25,-25.46"/>
+<text xml:space="preserve" text-anchor="start" x="1112.25" y="-32.46" font-family="Arial" font-size="11.00">sfIntersects</text>
+</g>
+<!-- SpatialObject&#45;&gt;SpatialObject -->
+<g id="edge22" class="edge">
+<title>SpatialObject&#45;&gt;SpatialObject</title>
+<path fill="none" stroke="black" d="M76,-44.17C305.96,-80.03 1171,-77.38 1171,-36.21 1171,4.31 332.78,7.51 87.24,-26.6"/>
+<polygon fill="black" stroke="black" points="86.88,-23.12 77.49,-28.03 87.9,-30.04 86.88,-23.12"/>
+<polygon fill="white" stroke="none" points="1171,-25.46 1171,-46.96 1230,-46.96 1230,-25.46 1171,-25.46"/>
+<text xml:space="preserve" text-anchor="start" x="1175" y="-32.46" font-family="Arial" font-size="11.00">sfOverlaps</text>
+</g>
+<!-- SpatialObject&#45;&gt;SpatialObject -->
+<g id="edge23" class="edge">
+<title>SpatialObject&#45;&gt;SpatialObject</title>
+<path fill="none" stroke="black" d="M75.84,-44.24C313.81,-82.04 1230,-79.36 1230,-36.21 1230,6.28 341.34,9.52 87.11,-26.5"/>
+<polygon fill="black" stroke="black" points="86.71,-23.02 77.34,-27.96 87.75,-29.94 86.71,-23.02"/>
+<polygon fill="white" stroke="none" points="1230,-25.46 1230,-46.96 1286,-46.96 1286,-25.46 1230,-25.46"/>
+<text xml:space="preserve" text-anchor="start" x="1234" y="-32.46" font-family="Arial" font-size="11.00">sfTouches</text>
+</g>
+<!-- SpatialObject&#45;&gt;SpatialObject -->
+<g id="edge24" class="edge">
+<title>SpatialObject&#45;&gt;SpatialObject</title>
+<path fill="none" stroke="black" d="M75.9,-44.34C321.82,-84.04 1286,-81.33 1286,-36.21 1286,8.24 349.86,11.52 87.17,-26.37"/>
+<polygon fill="black" stroke="black" points="86.76,-22.89 77.4,-27.86 87.81,-29.81 86.76,-22.89"/>
+<polygon fill="white" stroke="none" points="1286,-25.46 1286,-46.96 1332.25,-46.96 1332.25,-25.46 1286,-25.46"/>
+<text xml:space="preserve" text-anchor="start" x="1290" y="-32.46" font-family="Arial" font-size="11.00">sfWithin</text>
+</g>
+<!-- Invis -->
+</g>
+</svg></p>
+</div>
+<div class="tabbed-block">
+<p><img alt="SpatialObject Diagram" src="../../diagrams/SpatialObject.dot.png" /></p>
+</div>
+</div>
+</div>
+<h2 id="specializations-of-spatialobject">Specializations of SpatialObject<a class="headerlink" href="#specializations-of-spatialobject" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>Class</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="../Feature/">Feature</a></td>
+<td>A discrete spatial phenomenon in a universe of discourse.</td>
+</tr>
+<tr>
+<td><a href="../Geometry/">Geometry</a></td>
+<td>A coherent set of direct positions in space. The positions are held within a Spatial Reference System (SRS).</td>
+</tr>
+</tbody>
+</table>
+<h2 id="formalization-for-spatialobject">Formalization for SpatialObject<a class="headerlink" href="#formalization-for-spatialobject" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>Property</th>
+<th>Constraint</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="../../properties/ehContains/">ehContains</a></td>
+<td>only <a href="http://www.opengis.net/ont/geosparql/SpatialObject">SpatialObject</a></td>
+</tr>
+<tr>
+<td><a href="../../properties/ehCoveredBy/">ehCoveredBy</a></td>
+<td>only <a href="http://www.opengis.net/ont/geosparql/SpatialObject">SpatialObject</a></td>
+</tr>
+<tr>
+<td><a href="../../properties/ehCovers/">ehCovers</a></td>
+<td>only <a href="http://www.opengis.net/ont/geosparql/SpatialObject">SpatialObject</a></td>
+</tr>
+<tr>
+<td><a href="../../properties/ehDisjoint/">ehDisjoint</a></td>
+<td>only <a href="http://www.opengis.net/ont/geosparql/SpatialObject">SpatialObject</a></td>
+</tr>
+<tr>
+<td><a href="../../properties/ehEquals/">ehEquals</a></td>
+<td>only <a href="http://www.opengis.net/ont/geosparql/SpatialObject">SpatialObject</a></td>
+</tr>
+<tr>
+<td><a href="../../properties/ehInside/">ehInside</a></td>
+<td>only <a href="http://www.opengis.net/ont/geosparql/SpatialObject">SpatialObject</a></td>
+</tr>
+<tr>
+<td><a href="../../properties/ehMeet/">ehMeet</a></td>
+<td>only <a href="http://www.opengis.net/ont/geosparql/SpatialObject">SpatialObject</a></td>
+</tr>
+<tr>
+<td><a href="../../properties/ehOverlap/">ehOverlap</a></td>
+<td>only <a href="http://www.opengis.net/ont/geosparql/SpatialObject">SpatialObject</a></td>
+</tr>
+<tr>
+<td><a href="../../properties/hasMetricArea/">hasMetricArea</a></td>
+<td>datatype xsd:double</td>
+</tr>
+<tr>
+<td><a href="../../properties/hasMetricLength/">hasMetricLength</a></td>
+<td>datatype xsd:double</td>
+</tr>
+<tr>
+<td><a href="../../properties/hasMetricPerimeterLength/">hasMetricPerimeterLength</a></td>
+<td>datatype xsd:double</td>
+</tr>
+<tr>
+<td><a href="../../properties/hasMetricSize/">hasMetricSize</a></td>
+<td>datatype xsd:double</td>
+</tr>
+<tr>
+<td><a href="../../properties/hasMetricVolume/">hasMetricVolume</a></td>
+<td>datatype xsd:double</td>
+</tr>
+<tr>
+<td><a href="../../properties/rcc8dc/">rcc8dc</a></td>
+<td>only <a href="http://www.opengis.net/ont/geosparql/SpatialObject">SpatialObject</a></td>
+</tr>
+<tr>
+<td><a href="../../properties/rcc8ec/">rcc8ec</a></td>
+<td>only <a href="http://www.opengis.net/ont/geosparql/SpatialObject">SpatialObject</a></td>
+</tr>
+<tr>
+<td><a href="../../properties/rcc8eq/">rcc8eq</a></td>
+<td>only <a href="http://www.opengis.net/ont/geosparql/SpatialObject">SpatialObject</a></td>
+</tr>
+<tr>
+<td><a href="../../properties/rcc8ntpp/">rcc8ntpp</a></td>
+<td>only <a href="http://www.opengis.net/ont/geosparql/SpatialObject">SpatialObject</a></td>
+</tr>
+<tr>
+<td><a href="../../properties/rcc8ntppi/">rcc8ntppi</a></td>
+<td>only <a href="http://www.opengis.net/ont/geosparql/SpatialObject">SpatialObject</a></td>
+</tr>
+<tr>
+<td><a href="../../properties/rcc8po/">rcc8po</a></td>
+<td>only <a href="http://www.opengis.net/ont/geosparql/SpatialObject">SpatialObject</a></td>
+</tr>
+<tr>
+<td><a href="../../properties/rcc8tpp/">rcc8tpp</a></td>
+<td>only <a href="http://www.opengis.net/ont/geosparql/SpatialObject">SpatialObject</a></td>
+</tr>
+<tr>
+<td><a href="../../properties/rcc8tppi/">rcc8tppi</a></td>
+<td>only <a href="http://www.opengis.net/ont/geosparql/SpatialObject">SpatialObject</a></td>
+</tr>
+<tr>
+<td><a href="../../properties/sfContains/">sfContains</a></td>
+<td>only <a href="http://www.opengis.net/ont/geosparql/SpatialObject">SpatialObject</a></td>
+</tr>
+<tr>
+<td><a href="../../properties/sfCrosses/">sfCrosses</a></td>
+<td>only <a href="http://www.opengis.net/ont/geosparql/SpatialObject">SpatialObject</a></td>
+</tr>
+<tr>
+<td><a href="../../properties/sfDisjoint/">sfDisjoint</a></td>
+<td>only <a href="http://www.opengis.net/ont/geosparql/SpatialObject">SpatialObject</a></td>
+</tr>
+<tr>
+<td><a href="../../properties/sfEquals/">sfEquals</a></td>
+<td>only <a href="http://www.opengis.net/ont/geosparql/SpatialObject">SpatialObject</a></td>
+</tr>
+<tr>
+<td><a href="../../properties/sfIntersects/">sfIntersects</a></td>
+<td>only <a href="http://www.opengis.net/ont/geosparql/SpatialObject">SpatialObject</a></td>
+</tr>
+<tr>
+<td><a href="../../properties/sfOverlaps/">sfOverlaps</a></td>
+<td>only <a href="http://www.opengis.net/ont/geosparql/SpatialObject">SpatialObject</a></td>
+</tr>
+<tr>
+<td><a href="../../properties/sfTouches/">sfTouches</a></td>
+<td>only <a href="http://www.opengis.net/ont/geosparql/SpatialObject">SpatialObject</a></td>
+</tr>
+<tr>
+<td><a href="../../properties/sfWithin/">sfWithin</a></td>
+<td>only <a href="http://www.opengis.net/ont/geosparql/SpatialObject">SpatialObject</a></td>
+</tr>
+</tbody>
+</table>
+<h2 id="used-by-classes">Used by classes<a class="headerlink" href="#used-by-classes" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>Class</th>
+<th>Property</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="../SpatialObjectCollection/">Spatial Object Collection (rdfs)</a></td>
+<td><a href="https://w3id.org/citydata/imported/rdfs/member">rdfs:member</a></td>
+</tr>
+</tbody>
+</table>
+
+
+
+
+
+
+
+  
+    
+  
+  
+
+
+  <aside class="md-source-file">
+    
+      
+  <span class="md-source-file__fact">
+    <span class="md-icon" title="Last update">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
+    </span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="July 24, 2026 01:55:28 UTC">July 24, 2026</span>
+  </span>
+
+    
+    
+    
+    
+  </aside>
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      <p xmlns:cc="http://creativecommons.org/ns#" xmlns:dct="http://purl.org/dc/terms/"> <a href="https://creativecommons.org/licenses/by/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">CC BY 4.0<img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1" alt=""><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1" alt=""></a></p>
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["content.code.copy", "content.status", "content.tooltips", "icons", "navigation.path", "navigation.tabs", "navigation.tabs.sticky", "navigation.top"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": {"alias": true, "default": "latest", "provider": "mike"}}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.d7400e89.min.js"></script>
+      
+        <script src="https://unpkg.com/tablesort@5.3.0/dist/tablesort.min.js"></script>
+      
+        <script src="../../javascripts/tablesort.js"></script>
+      
+    
+  </body>
+</html>
