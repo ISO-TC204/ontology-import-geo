@@ -1,0 +1,42 @@
+// Diagram for SpatialObject
+digraph {
+	graph [overlap=false rankdir=TB splines=true]
+	node [fontname=Arial fontsize=12 margin=0 shape=none]
+	edge [fontname=Arial fontsize=11]
+	{
+		rank=source
+	}
+	SpatialObject [label=<<TABLE BORDER="1" CELLBORDER="0" CELLSPACING="0" CELLPADDING="1"><TR><TD BGCOLOR="lightgray" ALIGN="CENTER">SpatialObject</TD></TR><TR><TD ALIGN="LEFT">hasMetricArea : xsd:double</TD></TR><TR><TD ALIGN="LEFT">hasMetricLength : xsd:double</TD></TR><TR><TD ALIGN="LEFT">hasMetricPerimeterLength : xsd:double</TD></TR><TR><TD ALIGN="LEFT">hasMetricSize : xsd:double</TD></TR><TR><TD ALIGN="LEFT">hasMetricVolume : xsd:double</TD></TR></TABLE>> URL="../SpatialObject" margin=0]
+	{
+		rank=max
+	}
+	subgraph cluster_associated {
+		label="" style=invis
+		Invis [label=<<TABLE BORDER="0" CELLBORDER="0" CELLSPACING="0" CELLPADDING="1"><TR><TD></TD></TR></TABLE>> margin=0 style=invis]
+	}
+	SpatialObject [label=<<TABLE BORDER="1" CELLBORDER="0" CELLSPACING="0" CELLPADDING="1"><TR><TD BGCOLOR="lightgray" ALIGN="CENTER">SpatialObject</TD></TR></TABLE>> URL="../SpatialObject" margin=0]
+	SpatialObject -> SpatialObject [label=<<TABLE BORDER="0" CELLBORDER="0" CELLSPACING="0" CELLPADDING="4" BGCOLOR="white"><TR><TD ALIGN="CENTER">ehContains</TD></TR></TABLE>> arrowhead=normal style=solid]
+	SpatialObject -> SpatialObject [label=<<TABLE BORDER="0" CELLBORDER="0" CELLSPACING="0" CELLPADDING="4" BGCOLOR="white"><TR><TD ALIGN="CENTER">ehCoveredBy</TD></TR></TABLE>> arrowhead=normal style=solid]
+	SpatialObject -> SpatialObject [label=<<TABLE BORDER="0" CELLBORDER="0" CELLSPACING="0" CELLPADDING="4" BGCOLOR="white"><TR><TD ALIGN="CENTER">ehCovers</TD></TR></TABLE>> arrowhead=normal style=solid]
+	SpatialObject -> SpatialObject [label=<<TABLE BORDER="0" CELLBORDER="0" CELLSPACING="0" CELLPADDING="4" BGCOLOR="white"><TR><TD ALIGN="CENTER">ehDisjoint</TD></TR></TABLE>> arrowhead=normal style=solid]
+	SpatialObject -> SpatialObject [label=<<TABLE BORDER="0" CELLBORDER="0" CELLSPACING="0" CELLPADDING="4" BGCOLOR="white"><TR><TD ALIGN="CENTER">ehEquals</TD></TR></TABLE>> arrowhead=normal style=solid]
+	SpatialObject -> SpatialObject [label=<<TABLE BORDER="0" CELLBORDER="0" CELLSPACING="0" CELLPADDING="4" BGCOLOR="white"><TR><TD ALIGN="CENTER">ehInside</TD></TR></TABLE>> arrowhead=normal style=solid]
+	SpatialObject -> SpatialObject [label=<<TABLE BORDER="0" CELLBORDER="0" CELLSPACING="0" CELLPADDING="4" BGCOLOR="white"><TR><TD ALIGN="CENTER">ehMeet</TD></TR></TABLE>> arrowhead=normal style=solid]
+	SpatialObject -> SpatialObject [label=<<TABLE BORDER="0" CELLBORDER="0" CELLSPACING="0" CELLPADDING="4" BGCOLOR="white"><TR><TD ALIGN="CENTER">ehOverlap</TD></TR></TABLE>> arrowhead=normal style=solid]
+	SpatialObject -> SpatialObject [label=<<TABLE BORDER="0" CELLBORDER="0" CELLSPACING="0" CELLPADDING="4" BGCOLOR="white"><TR><TD ALIGN="CENTER">rcc8dc</TD></TR></TABLE>> arrowhead=normal style=solid]
+	SpatialObject -> SpatialObject [label=<<TABLE BORDER="0" CELLBORDER="0" CELLSPACING="0" CELLPADDING="4" BGCOLOR="white"><TR><TD ALIGN="CENTER">rcc8ec</TD></TR></TABLE>> arrowhead=normal style=solid]
+	SpatialObject -> SpatialObject [label=<<TABLE BORDER="0" CELLBORDER="0" CELLSPACING="0" CELLPADDING="4" BGCOLOR="white"><TR><TD ALIGN="CENTER">rcc8eq</TD></TR></TABLE>> arrowhead=normal style=solid]
+	SpatialObject -> SpatialObject [label=<<TABLE BORDER="0" CELLBORDER="0" CELLSPACING="0" CELLPADDING="4" BGCOLOR="white"><TR><TD ALIGN="CENTER">rcc8ntpp</TD></TR></TABLE>> arrowhead=normal style=solid]
+	SpatialObject -> SpatialObject [label=<<TABLE BORDER="0" CELLBORDER="0" CELLSPACING="0" CELLPADDING="4" BGCOLOR="white"><TR><TD ALIGN="CENTER">rcc8ntppi</TD></TR></TABLE>> arrowhead=normal style=solid]
+	SpatialObject -> SpatialObject [label=<<TABLE BORDER="0" CELLBORDER="0" CELLSPACING="0" CELLPADDING="4" BGCOLOR="white"><TR><TD ALIGN="CENTER">rcc8po</TD></TR></TABLE>> arrowhead=normal style=solid]
+	SpatialObject -> SpatialObject [label=<<TABLE BORDER="0" CELLBORDER="0" CELLSPACING="0" CELLPADDING="4" BGCOLOR="white"><TR><TD ALIGN="CENTER">rcc8tpp</TD></TR></TABLE>> arrowhead=normal style=solid]
+	SpatialObject -> SpatialObject [label=<<TABLE BORDER="0" CELLBORDER="0" CELLSPACING="0" CELLPADDING="4" BGCOLOR="white"><TR><TD ALIGN="CENTER">rcc8tppi</TD></TR></TABLE>> arrowhead=normal style=solid]
+	SpatialObject -> SpatialObject [label=<<TABLE BORDER="0" CELLBORDER="0" CELLSPACING="0" CELLPADDING="4" BGCOLOR="white"><TR><TD ALIGN="CENTER">sfContains</TD></TR></TABLE>> arrowhead=normal style=solid]
+	SpatialObject -> SpatialObject [label=<<TABLE BORDER="0" CELLBORDER="0" CELLSPACING="0" CELLPADDING="4" BGCOLOR="white"><TR><TD ALIGN="CENTER">sfCrosses</TD></TR></TABLE>> arrowhead=normal style=solid]
+	SpatialObject -> SpatialObject [label=<<TABLE BORDER="0" CELLBORDER="0" CELLSPACING="0" CELLPADDING="4" BGCOLOR="white"><TR><TD ALIGN="CENTER">sfDisjoint</TD></TR></TABLE>> arrowhead=normal style=solid]
+	SpatialObject -> SpatialObject [label=<<TABLE BORDER="0" CELLBORDER="0" CELLSPACING="0" CELLPADDING="4" BGCOLOR="white"><TR><TD ALIGN="CENTER">sfEquals</TD></TR></TABLE>> arrowhead=normal style=solid]
+	SpatialObject -> SpatialObject [label=<<TABLE BORDER="0" CELLBORDER="0" CELLSPACING="0" CELLPADDING="4" BGCOLOR="white"><TR><TD ALIGN="CENTER">sfIntersects</TD></TR></TABLE>> arrowhead=normal style=solid]
+	SpatialObject -> SpatialObject [label=<<TABLE BORDER="0" CELLBORDER="0" CELLSPACING="0" CELLPADDING="4" BGCOLOR="white"><TR><TD ALIGN="CENTER">sfOverlaps</TD></TR></TABLE>> arrowhead=normal style=solid]
+	SpatialObject -> SpatialObject [label=<<TABLE BORDER="0" CELLBORDER="0" CELLSPACING="0" CELLPADDING="4" BGCOLOR="white"><TR><TD ALIGN="CENTER">sfTouches</TD></TR></TABLE>> arrowhead=normal style=solid]
+	SpatialObject -> SpatialObject [label=<<TABLE BORDER="0" CELLBORDER="0" CELLSPACING="0" CELLPADDING="4" BGCOLOR="white"><TR><TD ALIGN="CENTER">sfWithin</TD></TR></TABLE>> arrowhead=normal style=solid]
+}
