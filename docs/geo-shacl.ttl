@@ -1,0 +1,266 @@
+# SHACL shapes derived from rdfs:domain / rdfs:range in geo.ttl.
+# Informative companion for ont2md documentation — not a semantic change to GeoSPARQL.
+# (Collection rdfs:member restrictions are already stated as OWL axioms in geo.ttl.)
+
+BASE <http://www.opengis.net/ont/geosparql/>
+
+PREFIX : <http://www.opengis.net/ont/geosparql/>
+PREFIX dcterms: <http://purl.org/dc/terms/>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX sh: <http://www.w3.org/ns/shacl#>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX vann: <http://purl.org/vocab/vann/>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+:geo-shacl
+	a owl:Ontology ;
+	dcterms:title "GeoSPARQL Ontology - SHACL constraints" ;
+	skos:definition "SHACL node shapes that restate property domains and ranges from the GeoSPARQL ontology for documentation and validation tooling." ;
+	vann:preferredNamespaceUri "http://www.opengis.net/ont/geosparql/"^^xsd:anyURI ;
+	vann:preferredNamespacePrefix "geo"^^xsd:string ;
+	owl:imports <http://www.opengis.net/ont/geosparql/> ;
+.
+
+# #################################################################
+# #
+# #    SpatialObject
+# #
+# #################################################################
+
+:SpatialObjectShape
+	a sh:NodeShape ;
+	sh:targetClass :SpatialObject ;
+	sh:property [
+		sh:path :ehContains ;
+		sh:class :SpatialObject ;
+	] ;
+	sh:property [
+		sh:path :ehCoveredBy ;
+		sh:class :SpatialObject ;
+	] ;
+	sh:property [
+		sh:path :ehCovers ;
+		sh:class :SpatialObject ;
+	] ;
+	sh:property [
+		sh:path :ehDisjoint ;
+		sh:class :SpatialObject ;
+	] ;
+	sh:property [
+		sh:path :ehEquals ;
+		sh:class :SpatialObject ;
+	] ;
+	sh:property [
+		sh:path :ehInside ;
+		sh:class :SpatialObject ;
+	] ;
+	sh:property [
+		sh:path :ehMeet ;
+		sh:class :SpatialObject ;
+	] ;
+	sh:property [
+		sh:path :ehOverlap ;
+		sh:class :SpatialObject ;
+	] ;
+	sh:property [
+		sh:path :hasArea ;
+	] ;
+	sh:property [
+		sh:path :hasLength ;
+	] ;
+	sh:property [
+		sh:path :hasMetricArea ;
+		sh:datatype xsd:double ;
+	] ;
+	sh:property [
+		sh:path :hasMetricLength ;
+		sh:datatype xsd:double ;
+	] ;
+	sh:property [
+		sh:path :hasMetricPerimeterLength ;
+		sh:datatype xsd:double ;
+	] ;
+	sh:property [
+		sh:path :hasMetricSize ;
+		sh:datatype xsd:double ;
+	] ;
+	sh:property [
+		sh:path :hasMetricVolume ;
+		sh:datatype xsd:double ;
+	] ;
+	sh:property [
+		sh:path :hasPerimeterLength ;
+	] ;
+	sh:property [
+		sh:path :hasSize ;
+	] ;
+	sh:property [
+		sh:path :hasVolume ;
+	] ;
+	sh:property [
+		sh:path :rcc8dc ;
+		sh:class :SpatialObject ;
+	] ;
+	sh:property [
+		sh:path :rcc8ec ;
+		sh:class :SpatialObject ;
+	] ;
+	sh:property [
+		sh:path :rcc8eq ;
+		sh:class :SpatialObject ;
+	] ;
+	sh:property [
+		sh:path :rcc8ntpp ;
+		sh:class :SpatialObject ;
+	] ;
+	sh:property [
+		sh:path :rcc8ntppi ;
+		sh:class :SpatialObject ;
+	] ;
+	sh:property [
+		sh:path :rcc8po ;
+		sh:class :SpatialObject ;
+	] ;
+	sh:property [
+		sh:path :rcc8tpp ;
+		sh:class :SpatialObject ;
+	] ;
+	sh:property [
+		sh:path :rcc8tppi ;
+		sh:class :SpatialObject ;
+	] ;
+	sh:property [
+		sh:path :sfContains ;
+		sh:class :SpatialObject ;
+	] ;
+	sh:property [
+		sh:path :sfCrosses ;
+		sh:class :SpatialObject ;
+	] ;
+	sh:property [
+		sh:path :sfDisjoint ;
+		sh:class :SpatialObject ;
+	] ;
+	sh:property [
+		sh:path :sfEquals ;
+		sh:class :SpatialObject ;
+	] ;
+	sh:property [
+		sh:path :sfIntersects ;
+		sh:class :SpatialObject ;
+	] ;
+	sh:property [
+		sh:path :sfOverlaps ;
+		sh:class :SpatialObject ;
+	] ;
+	sh:property [
+		sh:path :sfTouches ;
+		sh:class :SpatialObject ;
+	] ;
+	sh:property [
+		sh:path :sfWithin ;
+		sh:class :SpatialObject ;
+	] ;
+.
+
+# #################################################################
+# #
+# #    Feature
+# #
+# #################################################################
+
+:FeatureShape
+	a sh:NodeShape ;
+	sh:targetClass :Feature ;
+	sh:property [
+		sh:path :defaultGeometry ;
+		sh:class :Geometry ;
+	] ;
+	sh:property [
+		sh:path :hasBoundingBox ;
+		sh:class :Geometry ;
+	] ;
+	sh:property [
+		sh:path :hasCentroid ;
+		sh:class :Geometry ;
+	] ;
+	sh:property [
+		sh:path :hasDefaultGeometry ;
+		sh:class :Geometry ;
+	] ;
+	sh:property [
+		sh:path :hasGeometry ;
+		sh:class :Geometry ;
+	] ;
+.
+
+# #################################################################
+# #
+# #    Geometry
+# #
+# #################################################################
+
+:GeometryShape
+	a sh:NodeShape ;
+	sh:targetClass :Geometry ;
+	sh:property [
+		sh:path :asDGGS ;
+		sh:datatype :dggsLiteral ;
+	] ;
+	sh:property [
+		sh:path :asGeoJSON ;
+		sh:datatype :geoJSONLiteral ;
+	] ;
+	sh:property [
+		sh:path :asGML ;
+		sh:datatype :gmlLiteral ;
+	] ;
+	sh:property [
+		sh:path :asKML ;
+		sh:datatype :kmlLiteral ;
+	] ;
+	sh:property [
+		sh:path :asWKT ;
+		sh:datatype :wktLiteral ;
+	] ;
+	sh:property [
+		sh:path :coordinateDimension ;
+		sh:datatype xsd:integer ;
+	] ;
+	sh:property [
+		sh:path :dimension ;
+		sh:datatype xsd:integer ;
+	] ;
+	sh:property [
+		sh:path :hasMetricSpatialAccuracy ;
+		sh:datatype xsd:double ;
+	] ;
+	sh:property [
+		sh:path :hasMetricSpatialResolution ;
+		sh:datatype xsd:double ;
+	] ;
+	sh:property [
+		sh:path :hasSerialization ;
+		sh:nodeKind sh:Literal ;
+	] ;
+	sh:property [
+		sh:path :hasSpatialAccuracy ;
+	] ;
+	sh:property [
+		sh:path :hasSpatialResolution ;
+	] ;
+	sh:property [
+		sh:path :isEmpty ;
+		sh:datatype xsd:boolean ;
+	] ;
+	sh:property [
+		sh:path :isSimple ;
+		sh:datatype xsd:boolean ;
+	] ;
+	sh:property [
+		sh:path :spatialDimension ;
+		sh:datatype xsd:integer ;
+	] ;
+.
